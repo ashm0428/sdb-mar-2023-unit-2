@@ -1,5 +1,7 @@
 const readline = require("readline");
 
+const computerResponse = require("./input-output-computer-response")
+
 const readlineInterface = readline.createInterface(
   process.stdin,
   process.stdout
@@ -23,12 +25,12 @@ async function start(){
 start();
 
 
-function computerResponse(string){
-let white = "\033[0;39m"
-let yellow = "\033[0;33m";
+// function computerResponse(string){
+// let white = "\033[0;39m"
+// let yellow = "\033[0;33m";
 
-console.log(yellow + string + white)
-}
+// console.log(yellow + string + white)
+// }
 
 function correctCasing(word) {
     let wordLowerCase = word.toLowerCase();
